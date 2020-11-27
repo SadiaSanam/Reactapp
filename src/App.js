@@ -5,15 +5,13 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      
-      <header className="App-header">
+    <div className="WeatherApp">
+      <header>
         <Weather />
-       
       </header>
       <footer> 
         Created by 
-      <a href="#" >Sadia Sanam Sarwar</a>
+      <a href="https://github.com/SadiaSanam/Reactapp" >Sadia Sanam Sarwar</a>
       </footer>
     </div>
   );
