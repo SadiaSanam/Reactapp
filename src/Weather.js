@@ -17,8 +17,11 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
-      wind: response.data.wind.speed,
       city: response.data.name,
+      feels: Math.round(response.data.main.feels_like),
+      hiTemp: Math.round(response.data.main.temp_max),
+      lowTemp: Math.round(response.data.main.temp_min),
+      wind: Math.round(response.data.wind.speed),
     });
   }
 
